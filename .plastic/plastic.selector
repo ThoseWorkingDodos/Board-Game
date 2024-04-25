@@ -1,0 +1,4 @@
+repository "Board Game@AniRan@cloud"
+  path "/"
+    br "/main"
+    co "/main"
