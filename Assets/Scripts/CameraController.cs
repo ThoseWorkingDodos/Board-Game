@@ -37,7 +37,7 @@ public class CameraController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            playerCam.transform.position += transform.up * 5 * Time.deltaTime;
+            playerCam.transform.position += Vector3.up * 5 * Time.deltaTime;
         }
       
         playerCam.transform.position += Vector3.forward * Input.GetAxis("Vertical") * 5 * Time.deltaTime;
