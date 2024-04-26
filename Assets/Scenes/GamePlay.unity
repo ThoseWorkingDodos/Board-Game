@@ -1321,7 +1321,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1416,19 +1415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camSens: 1
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d8e5b05a9682fa4cb61782eb8f374f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camSens: 5
 --- !u!1001 &1015743796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1873,7 +1859,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0fe8a6c1cb813942bb6c2b6afb82d8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyTypes: {fileID: 4553591277429715633, guid: 1898c2c89bcd03f45ac985985a8c2da0, type: 3}
+  moneyTypes:
+  - {fileID: 6455477435192540113, guid: adea662a8c4dda246823b95be9b403ae, type: 3}
+  - {fileID: 5109287206871425244, guid: 9d169b43ad1c3214cacb6d6042e24582, type: 3}
+  - {fileID: 2920830232368636958, guid: c66f93ba5c67f9c4e8d79e8831c4e483, type: 3}
+  - {fileID: 905067783665283800, guid: 46d589dc7602ae34f93c7a85cea2811d, type: 3}
+  - {fileID: 3985509876742772654, guid: 067d0b3c94b36c04cbdb246b18ae061e, type: 3}
+  - {fileID: 4246924006569913573, guid: d088e718b336d754cbd931ceb0a478c9, type: 3}
+  - {fileID: 7667184071044098787, guid: 53a7d4f5a82d857489f27450b0f1c3af, type: 3}
 --- !u!4 &1477779718
 Transform:
   m_ObjectHideFlags: 0
@@ -1882,13 +1875,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477779716}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.25, y: 8, z: -5.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1485758337
 GameObject:
   m_ObjectHideFlags: 0
