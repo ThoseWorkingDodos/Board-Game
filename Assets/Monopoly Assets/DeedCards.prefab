@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 105918384019461359}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 6.101, y: 0.29900002, z: -0.713}
+  m_LocalPosition: {x: 6.101, y: 0.303, z: -0.713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109,12 +109,65 @@ Transform:
   m_GameObject: {fileID: 199410449292596106}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 2.6039999, y: -0.17799944, z: 0.17800012}
+  m_LocalPosition: {x: 2.604, y: -0.17, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4064250829288745726}
   m_LocalEulerAnglesHint: {x: 85, y: 0, z: 0}
+--- !u!1 &203009034158989052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7818274524041170665}
+  - component: {fileID: 4211656650404216036}
+  m_Layer: 0
+  m_Name: HitBox (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7818274524041170665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203009034158989052}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: -0, y: 0.69, z: -0.403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &4211656650404216036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203009034158989052}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.24362065, z: 0.1023735}
+  m_Center: {x: -0.01539352, y: -0.2422161, z: -0.4088213}
 --- !u!1 &268532275216263537
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +180,7 @@ GameObject:
   - component: {fileID: 4554039006908461423}
   - component: {fileID: 6259871380730439225}
   - component: {fileID: 7462632707572190348}
+  - component: {fileID: 6843745641241926081}
   m_Layer: 0
   m_Name: BoardWalk_card
   m_TagString: Untagged
@@ -221,6 +275,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6843745641241926081
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268532275216263537}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &311119714034268071
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +314,7 @@ GameObject:
   - component: {fileID: 2776223762063570101}
   - component: {fileID: 8944459046789881653}
   - component: {fileID: 8266642510470009300}
+  - component: {fileID: 1066946913654670460}
   m_Layer: 0
   m_Name: PacificAve_card
   m_TagString: Untagged
@@ -327,6 +409,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &1066946913654670460
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311119714034268071}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &496019300887790582
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +448,7 @@ GameObject:
   - component: {fileID: 652534429098266239}
   - component: {fileID: 1637623673293504511}
   - component: {fileID: 3762441537921516896}
+  - component: {fileID: 6449213800222892794}
   m_Layer: 0
   m_Name: VirginiaAve_card
   m_TagString: Untagged
@@ -433,6 +543,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6449213800222892794
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496019300887790582}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &531971843593541179
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +595,7 @@ Transform:
   m_GameObject: {fileID: 531971843593541179}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 6.101, y: -0.178, z: 0.178}
+  m_LocalPosition: {x: 6.101, y: -0.166, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -476,6 +613,7 @@ GameObject:
   - component: {fileID: 2997358247861964665}
   - component: {fileID: 1006803293145584692}
   - component: {fileID: 8809255924204650796}
+  - component: {fileID: 3341091873288043514}
   m_Layer: 0
   m_Name: IllinoisAve_card
   m_TagString: Untagged
@@ -570,6 +708,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1391801, y: 0.0045407712, z: 1.5315394}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &3341091873288043514
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556882899023728872}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &972850456730844288
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +760,7 @@ Transform:
   m_GameObject: {fileID: 972850456730844288}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 4.3190002, y: -0.725, z: 1.1849997}
+  m_LocalPosition: {x: 4.319, y: -0.706, z: 1.183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -626,7 +791,7 @@ Transform:
   m_GameObject: {fileID: 1001594630385487179}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 4.319, y: 0.299, z: -0.713}
+  m_LocalPosition: {x: 4.319, y: 0.307, z: -0.714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -644,6 +809,7 @@ GameObject:
   - component: {fileID: 2520489276241100989}
   - component: {fileID: 8554544039437996170}
   - component: {fileID: 5765842438086589516}
+  - component: {fileID: 8024102830937543729}
   m_Layer: 0
   m_Name: NorCalAve_card
   m_TagString: Untagged
@@ -738,6 +904,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &8024102830937543729
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139045708133309763}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1199057794380179676
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,6 +943,7 @@ GameObject:
   - component: {fileID: 4181775581420555881}
   - component: {fileID: 9022212524453306699}
   - component: {fileID: 7123302181498939932}
+  - component: {fileID: 1423336404270429758}
   m_Layer: 0
   m_Name: PennAve_card
   m_TagString: Untagged
@@ -844,6 +1038,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &1423336404270429758
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199057794380179676}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1421080301152038730
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +1090,7 @@ Transform:
   m_GameObject: {fileID: 1421080301152038730}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 4.3190002, y: -0.17799944, z: 0.17799982}
+  m_LocalPosition: {x: 4.319, y: -0.17, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -887,6 +1108,7 @@ GameObject:
   - component: {fileID: 507541919402107266}
   - component: {fileID: 2202300752900050653}
   - component: {fileID: 2603317175393950745}
+  - component: {fileID: 2433695774654536429}
   m_Layer: 0
   m_Name: MediteraneanAve_card
   m_TagString: Untagged
@@ -981,6 +1203,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &2433695774654536429
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511031109236811780}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1519763302909568464
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,6 +1242,7 @@ GameObject:
   - component: {fileID: 4853903385791094071}
   - component: {fileID: 5798802707032112136}
   - component: {fileID: 3263371257918436256}
+  - component: {fileID: 1871539650056559582}
   m_Layer: 0
   m_Name: MarvinGardens_card
   m_TagString: Untagged
@@ -1087,6 +1337,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &1871539650056559582
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519763302909568464}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1580811884453948534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,7 +1390,7 @@ Transform:
   m_GameObject: {fileID: 1580811884453948534}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23344536, y: 0, z: 0, w: 0.97236997}
-  m_LocalPosition: {x: -0, y: -0.267, z: 1.106}
+  m_LocalPosition: {x: 0, y: -0.2606, z: 1.1092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1138,8 +1415,61 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13.634173, y: 0.022695845, z: 0.1023735}
-  m_Center: {x: -0.015393499, y: -0.37576273, z: -0.40882233}
+  m_Size: {x: 13.634174, y: 0.022695834, z: 0.107182465}
+  m_Center: {x: -0.015393521, y: -0.37576282, z: -0.41166183}
+--- !u!1 &2093596262755088565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5725288809570095652}
+  - component: {fileID: 5808241186338357667}
+  m_Layer: 0
+  m_Name: HitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5725288809570095652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093596262755088565}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: -0.44800037, z: 1.863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &5808241186338357667
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093596262755088565}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.1663783, y: 0.15283154, z: 0.1023735}
+  m_Center: {x: -5.2492924, y: -0.31069547, z: -0.408821}
 --- !u!1 &2131838591428916623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,8 +1507,71 @@ Transform:
   - {fileID: 5790471967386641091}
   - {fileID: 4309584726421341345}
   - {fileID: 2153886441761297109}
+  - {fileID: 5725288809570095652}
+  - {fileID: 639297198459164844}
+  - {fileID: 549628051577034110}
+  - {fileID: 9173557701121150924}
+  - {fileID: 1919063219320618080}
+  - {fileID: 7235319272032681317}
+  - {fileID: 7886930853643360088}
+  - {fileID: 2617665717150156466}
+  - {fileID: 5386586373073341203}
+  - {fileID: 7818274524041170665}
   m_Father: {fileID: 8283770269303166704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2206697337708075178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549628051577034110}
+  - component: {fileID: 7220921557578776386}
+  m_Layer: 0
+  m_Name: HitBox (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549628051577034110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206697337708075178}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: -0.265, z: 1.486}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &7220921557578776386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206697337708075178}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.22366253, z: 0.1023735}
+  m_Center: {x: -0.015393521, y: -0.3154009, z: -0.40882063}
 --- !u!1 &2315978731752007952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1597,7 @@ Transform:
   m_GameObject: {fileID: 2315978731752007952}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -0.8799999, y: -0.17799944, z: 0.17300054}
+  m_LocalPosition: {x: -0.88, y: -0.166, z: 0.172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1222,6 +1615,7 @@ GameObject:
   - component: {fileID: 2337114760826293964}
   - component: {fileID: 5195175605580122063}
   - component: {fileID: 3001128284691788183}
+  - component: {fileID: 148776380812869406}
   m_Layer: 0
   m_Name: TenneseAve_card
   m_TagString: Untagged
@@ -1316,6 +1710,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &148776380812869406
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409262057547832626}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2685588542017745689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,7 +1815,7 @@ Transform:
   m_GameObject: {fileID: 2772847918863782798}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 2.604, y: -0.725, z: 1.185}
+  m_LocalPosition: {x: 2.604, y: -0.707, z: 1.183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1412,6 +1833,7 @@ GameObject:
   - component: {fileID: 6364780892040597248}
   - component: {fileID: 8342921578281993248}
   - component: {fileID: 2227306472090451218}
+  - component: {fileID: 5432906948164085163}
   m_Layer: 0
   m_Name: NYCAve_card
   m_TagString: Untagged
@@ -1506,6 +1928,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &5432906948164085163
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932651884625788762}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &2976594572509364168
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,6 +1999,7 @@ GameObject:
   - component: {fileID: 4931400655293220462}
   - component: {fileID: 1065036478872981525}
   - component: {fileID: 441418839635433571}
+  - component: {fileID: 5393358360346232087}
   m_Layer: 0
   m_Name: IndianaAve_card
   m_TagString: Untagged
@@ -1644,6 +2094,139 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &5393358360346232087
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980836236319359254}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!1 &3034435590045088287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639297198459164844}
+  - component: {fileID: 9007931503558616068}
+  m_Layer: 0
+  m_Name: HitBox (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639297198459164844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034435590045088287}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: -0, y: -0.366, z: 1.679}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &9007931503558616068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034435590045088287}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.2079983, z: 0.1023735}
+  m_Center: {x: -0.01539352, y: -0.3232326, z: -0.40882146}
+--- !u!1 &3292450367893825421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919063219320618080}
+  - component: {fileID: 3862887932709073706}
+  m_Layer: 0
+  m_Name: HitBox (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919063219320618080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292450367893825421}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: 0.058, z: 0.881}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &3862887932709073706
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292450367893825421}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.23329763, z: 0.1023735}
+  m_Center: {x: -0.015393519, y: -0.31058362, z: -0.40882125}
 --- !u!1 &3406961068718086102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +2292,7 @@ GameObject:
   - component: {fileID: 4348236523311546678}
   - component: {fileID: 3827591697086716689}
   - component: {fileID: 1145197146771640184}
+  - component: {fileID: 6236327752949685841}
   m_Layer: 0
   m_Name: VermontAve_card
   m_TagString: Untagged
@@ -1803,6 +2387,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6236327752949685841
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425832495578822311}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &3510451478518038234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,7 +2439,7 @@ Transform:
   m_GameObject: {fileID: 3510451478518038234}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 2.6039999, y: 0.29900002, z: -0.7129999}
+  m_LocalPosition: {x: 2.604, y: 0.303, z: -0.713}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1859,12 +2470,65 @@ Transform:
   m_GameObject: {fileID: 3679328127140547461}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 0.8219998, y: 0.29900002, z: -0.7129999}
+  m_LocalPosition: {x: 0.822, y: 0.308, z: -0.714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4064250829288745726}
   m_LocalEulerAnglesHint: {x: 85, y: 0, z: 0}
+--- !u!1 &3846754083264981402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2617665717150156466}
+  - component: {fileID: 7882403719635914340}
+  m_Layer: 0
+  m_Name: HitBox (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2617665717150156466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846754083264981402}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: 0.378, z: 0.185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &7882403719635914340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3846754083264981402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.2161628, z: 0.1023735}
+  m_Center: {x: -0.015393519, y: -0.26289913, z: -0.4088214}
 --- !u!1 &4202121682891172301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,6 +2572,7 @@ GameObject:
   - component: {fileID: 3443145035132390299}
   - component: {fileID: 8728543093947747141}
   - component: {fileID: 5459889062756271145}
+  - component: {fileID: 4236896513994053317}
   m_Layer: 0
   m_Name: ShortRail_card
   m_TagString: Untagged
@@ -2002,6 +2667,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &4236896513994053317
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4250767860571495805}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &4451894183498253936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2027,12 +2719,65 @@ Transform:
   m_GameObject: {fileID: 4451894183498253936}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -2.6100006, y: 0.29900002, z: -0.71799916}
+  m_LocalPosition: {x: -2.61, y: 0.313, z: -0.719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4064250829288745726}
   m_LocalEulerAnglesHint: {x: 85, y: 0, z: 0}
+--- !u!1 &4524641080710415170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7235319272032681317}
+  - component: {fileID: 5665812873945063439}
+  m_Layer: 0
+  m_Name: HitBox (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7235319272032681317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4524641080710415170}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: 0.167, z: 0.681}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &5665812873945063439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4524641080710415170}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.15194091, z: 0.1023735}
+  m_Center: {x: -0.01539352, y: -0.29501012, z: -0.40882182}
 --- !u!1 &4542545091874304598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2045,6 +2790,7 @@ GameObject:
   - component: {fileID: 7711852632221728808}
   - component: {fileID: 9194604856351912014}
   - component: {fileID: 8553181808250342143}
+  - component: {fileID: 4304855280545184246}
   m_Layer: 0
   m_Name: BalticAve_card
   m_TagString: Untagged
@@ -2139,6 +2885,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &4304855280545184246
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542545091874304598}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &4571175862133314787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,6 +3050,7 @@ GameObject:
   - component: {fileID: 8414492288533923552}
   - component: {fileID: 3044599285056981232}
   - component: {fileID: 5889628912820276528}
+  - component: {fileID: 1807010750866117609}
   m_Layer: 0
   m_Name: PennRail_card
   m_TagString: Untagged
@@ -2371,6 +3145,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &1807010750866117609
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601784582548130278}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &4817006563822442103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,7 +3197,7 @@ Transform:
   m_GameObject: {fileID: 4817006563822442103}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -0.88, y: -0.725, z: 1.18}
+  m_LocalPosition: {x: -0.88, y: -0.706, z: 1.178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2427,7 +3228,7 @@ Transform:
   m_GameObject: {fileID: 4882441759613089125}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 0.82200027, y: -0.725, z: 1.1849998}
+  m_LocalPosition: {x: 0.822, y: -0.71, z: 1.183}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2489,7 +3290,7 @@ Transform:
   m_GameObject: {fileID: 5216799020048621904}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -6.164, y: -0.0009998251, z: -0.122000135}
+  m_LocalPosition: {x: -6.164, y: -0.011, z: -0.121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2560,6 +3361,7 @@ GameObject:
   - component: {fileID: 1278953619110824232}
   - component: {fileID: 4725419159934843687}
   - component: {fileID: 5508929689398560292}
+  - component: {fileID: 7167263033926085288}
   m_Layer: 0
   m_Name: StCharlesAve_card
   m_TagString: Untagged
@@ -2654,6 +3456,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &7167263033926085288
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657391313818433147}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &5927818562271651283
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,6 +3495,7 @@ GameObject:
   - component: {fileID: 4887247058372611418}
   - component: {fileID: 2263090482138558946}
   - component: {fileID: 5253850896515134211}
+  - component: {fileID: 12891688002629444}
   m_Layer: 0
   m_Name: StatesAve_card
   m_TagString: Untagged
@@ -2760,6 +3590,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &12891688002629444
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927818562271651283}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &6166579970214742294
 GameObject:
   m_ObjectHideFlags: 0
@@ -2922,7 +3779,7 @@ Transform:
   m_GameObject: {fileID: 6710615613340151621}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -0.88000035, y: 0.29900002, z: -0.7179993}
+  m_LocalPosition: {x: -0.88, y: 0.311, z: -0.719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2940,6 +3797,7 @@ GameObject:
   - component: {fileID: 7889566348053626990}
   - component: {fileID: 2756289084201361195}
   - component: {fileID: 1904370764586063629}
+  - component: {fileID: 2449452637450131036}
   m_Layer: 0
   m_Name: KentuckyAve_card
   m_TagString: Untagged
@@ -3034,6 +3892,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &2449452637450131036
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813330142446547171}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &6923052482619781886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,7 +3944,7 @@ Transform:
   m_GameObject: {fileID: 6923052482619781886}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -6.1639996, y: 0.31700084, z: -0.7219997}
+  m_LocalPosition: {x: -6.164, y: 0.311, z: -0.721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3077,6 +3962,7 @@ GameObject:
   - component: {fileID: 7986458794854212533}
   - component: {fileID: 3647932793532172589}
   - component: {fileID: 7358133639447417193}
+  - component: {fileID: 6785524057271454832}
   m_Layer: 0
   m_Name: ParkPlace_card
   m_TagString: Untagged
@@ -3171,6 +4057,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6785524057271454832
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948571878513746026}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &6962591950799041066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,7 +4110,7 @@ Transform:
   m_GameObject: {fileID: 6962591950799041066}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23344536, y: 0, z: 0, w: 0.97236997}
-  m_LocalPosition: {x: -0, y: -0.05, z: 0.688}
+  m_LocalPosition: {x: 0, y: -0.042, z: 0.692}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3222,8 +4135,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 13.634173, y: 0.022695845, z: 0.1023735}
-  m_Center: {x: -0.015393499, y: -0.37576273, z: -0.40882233}
+  m_Size: {x: 13.634174, y: 0.022695834, z: 0.12046438}
+  m_Center: {x: -0.015393521, y: -0.3757628, z: -0.39977723}
 --- !u!1 &6971897724182079306
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,7 +4219,7 @@ Transform:
   m_GameObject: {fileID: 6999304156708960636}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -2.6100001, y: -0.17799944, z: 0.17300065}
+  m_LocalPosition: {x: -2.61, y: -0.165, z: 0.172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3324,6 +4237,7 @@ GameObject:
   - component: {fileID: 650638807148982870}
   - component: {fileID: 9129025622831320870}
   - component: {fileID: 8343716904779208054}
+  - component: {fileID: 2934237283788596755}
   m_Layer: 0
   m_Name: ConneticutAve_card
   m_TagString: Untagged
@@ -3418,6 +4332,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &2934237283788596755
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7103624775465891436}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &7259593924743936412
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,7 +4384,7 @@ Transform:
   m_GameObject: {fileID: 7259593924743936412}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 6.101, y: -0.725, z: 1.185}
+  m_LocalPosition: {x: 6.101, y: -0.712, z: 1.184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3461,6 +4402,7 @@ GameObject:
   - component: {fileID: 3826578835340641729}
   - component: {fileID: 1682941184659178948}
   - component: {fileID: 8717309267425017952}
+  - component: {fileID: 4967965035455762357}
   m_Layer: 0
   m_Name: StJamesAve_card
   m_TagString: Untagged
@@ -3555,6 +4497,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &4967965035455762357
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7305270067377920422}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &7393406753366087381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3580,7 +4549,7 @@ Transform:
   m_GameObject: {fileID: 7393406753366087381}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -4.39, y: -0.725, z: 1.37}
+  m_LocalPosition: {x: -4.39, y: -0.816, z: 1.378}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3674,6 +4643,59 @@ Transform:
   - {fileID: 5602938105619770503}
   m_Father: {fileID: 8283770269303166704}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8158167502095853317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5386586373073341203}
+  - component: {fileID: 1915283838667771864}
+  m_Layer: 0
+  m_Name: HitBox (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5386586373073341203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8158167502095853317}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: 0.594, z: -0.212}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &1915283838667771864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8158167502095853317}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.19142264, z: 0.1023735}
+  m_Center: {x: -0.015393521, y: -0.22605419, z: -0.4088215}
 --- !u!1 &8207963389831624242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +4721,7 @@ Transform:
   m_GameObject: {fileID: 8207963389831624242}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: 0.82200027, y: -0.17799944, z: 0.17799994}
+  m_LocalPosition: {x: 0.822, y: -0.169, z: 0.177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3717,6 +4739,7 @@ GameObject:
   - component: {fileID: 4317197051863297318}
   - component: {fileID: 6683968058878279661}
   - component: {fileID: 1631282653731609463}
+  - component: {fileID: 6791811028337444210}
   m_Layer: 0
   m_Name: ReadingRail_card
   m_TagString: Untagged
@@ -3811,6 +4834,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6791811028337444210
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321307412354515593}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &8425222203964227624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,6 +4873,7 @@ GameObject:
   - component: {fileID: 6631049316087883600}
   - component: {fileID: 29482977391784902}
   - component: {fileID: 8538371892279942355}
+  - component: {fileID: 6875379619587824913}
   m_Layer: 0
   m_Name: AtlanticAve_card
   m_TagString: Untagged
@@ -3917,6 +4968,86 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &6875379619587824913
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8425222203964227624}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!1 &8507818767289868064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9173557701121150924}
+  - component: {fileID: 6722108459231027537}
+  m_Layer: 0
+  m_Name: HitBox (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9173557701121150924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507818767289868064}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: 0, y: 0.009, z: 1.081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &6722108459231027537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507818767289868064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.16418535, z: 0.1023735}
+  m_Center: {x: -0.015393521, y: -0.34513867, z: -0.4088223}
 --- !u!1 &8606835516841283476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,6 +5060,7 @@ GameObject:
   - component: {fileID: 5485870227930523927}
   - component: {fileID: 5138769032797045876}
   - component: {fileID: 3061505621831186303}
+  - component: {fileID: 7123288806451397009}
   m_Layer: 0
   m_Name: B_ORail_card
   m_TagString: Untagged
@@ -4023,6 +5155,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &7123288806451397009
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8606835516841283476}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &8737850723606583937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4048,7 +5207,7 @@ Transform:
   m_GameObject: {fileID: 8737850723606583937}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -2.61, y: -0.725, z: 1.18}
+  m_LocalPosition: {x: -2.61, y: -0.713, z: 1.179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4079,7 +5238,7 @@ Transform:
   m_GameObject: {fileID: 8746099275932223041}
   serializedVersion: 2
   m_LocalRotation: {x: 0.67559016, y: 0, z: 0, w: 0.7372774}
-  m_LocalPosition: {x: -6.164, y: -0.725, z: 1.3700002}
+  m_LocalPosition: {x: -6.164, y: -0.818, z: 1.378}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4097,6 +5256,7 @@ GameObject:
   - component: {fileID: 4295259356181286616}
   - component: {fileID: 2410274126652038334}
   - component: {fileID: 1416028891141451199}
+  - component: {fileID: 8136004841761970240}
   m_Layer: 0
   m_Name: VentronAve_card
   m_TagString: Untagged
@@ -4191,6 +5351,86 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0}
+--- !u!54 &8136004841761970240
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979208800641173093}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!1 &9197482507877027932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7886930853643360088}
+  - component: {fileID: 4948463466513621623}
+  m_Layer: 0
+  m_Name: HitBox (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7886930853643360088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197482507877027932}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0048802127, y: -0, z: 1.5418777e-12, w: 0.99998814}
+  m_LocalPosition: {x: -0, y: 0.228, z: 0.468}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6807730822959845202}
+  m_LocalEulerAnglesHint: {x: -0.559, y: 0, z: 0}
+--- !u!65 &4948463466513621623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197482507877027932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.634174, y: 0.25351027, z: 0.17659435}
+  m_Center: {x: -0.01539352, y: -0.24422519, z: -0.44593206}
 --- !u!1 &9200543252744231853
 GameObject:
   m_ObjectHideFlags: 0
@@ -4203,6 +5443,7 @@ GameObject:
   - component: {fileID: 4169421106023810114}
   - component: {fileID: 7659195138022932302}
   - component: {fileID: 780889812751460948}
+  - component: {fileID: 6509530851921638754}
   m_Layer: 0
   m_Name: OrientalAve_card
   m_TagString: Untagged
@@ -4297,3 +5538,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1390911, y: 0.0045407414, z: 1.5311368}
   m_Center: {x: -0.000000059604645, y: 0, z: 0.0000009536743}
+--- !u!54 &6509530851921638754
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200543252744231853}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
