@@ -5,18 +5,20 @@ public class ObjectPickup : MonoBehaviour
     public float forceAmount = 10f;
 
     [SerializeField]Rigidbody   selectedRigidbody;
-    Camera      targetCamera;
-    Vector3     originalScreenTargetPosition;
-    Vector3     originalRigidbodyPos;
-    float       selectionDistance;
-    public bool cardPicked;
-    public float rayDist;
+    Camera          targetCamera;
+    Vector3         originalScreenTargetPosition;
+    Vector3         originalRigidbodyPos;
+    float           selectionDistance;
+    public float    rayDist;
+
     [SerializeField] private LayerMask layer;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         targetCamera = GetComponent<Camera>();
         rayDist = 50f;
+
     }
 
     void Update()
@@ -26,12 +28,15 @@ public class ObjectPickup : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //Check if we are hovering over Rigidbody, if so, select it
             selectedRigidbody = GetRigidbodyFromMouseClick();
+
+            if(selectedRigidbody && selectedRigidbody.gameObject.name != "Dice")
+                selectedRigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         }
+
         if (Input.GetMouseButtonUp(0) && selectedRigidbody)
         {
-            //Release selected Rigidbody if there any
+            selectedRigidbody.constraints = RigidbodyConstraints.None;
             selectedRigidbody = null;
         }
 
@@ -40,15 +45,26 @@ public class ObjectPickup : MonoBehaviour
             selectedRigidbody.transform.Rotate(new Vector3(0,5,0));
         }
 
-        if (Input.GetKey(KeyCode.Z) && selectedRigidbody)
+        if (Input.GetKey(KeyCode.X) && selectedRigidbody)
         {
-            selectedRigidbody.transform.position = new Vector3 (0,12,0);
-          
+            selectedRigidbody.transform.position = new Vector3 (0,8.02f,0);
+            selectedRigidbody.velocity = Vector3.zero;
+            selectedRigidbody = null;
         }
 
         if (Input.GetKey(KeyCode.Q) && selectedRigidbody)
         {
             selectedRigidbody.transform.Rotate(new Vector3(0, -5, 0));
+        }
+
+        if (Input.GetKey(KeyCode.Z) && selectedRigidbody)
+        {
+            selectedRigidbody.transform.Rotate(new Vector3(-5, 0, 0));
+        }
+
+        if (Input.GetKey(KeyCode.C) && selectedRigidbody)
+        {
+            selectedRigidbody.transform.Rotate(new Vector3(5,0, 0));
         }
 
         if (Input.GetKeyDown(KeyCode.F) && selectedRigidbody)
@@ -62,12 +78,23 @@ public class ObjectPickup : MonoBehaviour
     {
         if (selectedRigidbody)
         {
+            if (Input.GetMouseButton(3))
+                selectionDistance -= 10f * Time.deltaTime;
+
+            if (Input.GetMouseButton(4))
+                selectionDistance += 10f * Time.deltaTime;
+
             Vector3 mousePositionOffset = targetCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, selectionDistance)) - originalScreenTargetPosition;
-            selectedRigidbody.velocity = (originalRigidbodyPos + mousePositionOffset - selectedRigidbody.transform.position) * forceAmount * Time.deltaTime;
+
+            Vector3 newPos = originalRigidbodyPos + mousePositionOffset;
+
+           
+            selectedRigidbody.velocity = (newPos - selectedRigidbody.transform.position) * forceAmount * Time.deltaTime;
+            
             if (selectedRigidbody.gameObject.name == "Dice" && Input.GetKey(KeyCode.R))
             {
                 Debug.Log("Yes");
-                selectedRigidbody.AddTorque(new Vector3(1,1,1) * 1000000f* Time.deltaTime);
+                selectedRigidbody.angularVelocity += new Vector3(1,1,1)*5000*Time.deltaTime;
             }
         }
     }
