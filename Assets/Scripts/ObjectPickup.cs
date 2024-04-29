@@ -75,6 +75,7 @@ public class ObjectPickup : MonoBehaviour
 
     }
 
+
     void FixedUpdate()
     {
         if (selectedRigidbody)
