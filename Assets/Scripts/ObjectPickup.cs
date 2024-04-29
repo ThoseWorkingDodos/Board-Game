@@ -8,6 +8,7 @@ public class ObjectPickup : MonoBehaviour
     Camera          targetCamera;
     Vector3         originalScreenTargetPosition;
     Vector3         originalRigidbodyPos;
+    private float   rotVel;
     float           selectionDistance;
     public float    rayDist;
 
@@ -18,7 +19,7 @@ public class ObjectPickup : MonoBehaviour
     {
         targetCamera = GetComponent<Camera>();
         rayDist = 50f;
-
+        rotVel = 100f;
     }
 
     void Update()
@@ -42,7 +43,7 @@ public class ObjectPickup : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E) && selectedRigidbody )
         {
-            selectedRigidbody.transform.Rotate(new Vector3(0,5,0));
+            selectedRigidbody.transform.Rotate(new Vector3(0,rotVel,0) * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.X) && selectedRigidbody)
@@ -54,17 +55,17 @@ public class ObjectPickup : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Q) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(0, -5, 0));
+            selectedRigidbody.transform.Rotate(new Vector3(0, -rotVel, 0) * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.Z) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(-5, 0, 0));
+            selectedRigidbody.transform.Rotate(new Vector3(-rotVel, 0, 0) *Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.C) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(5,0, 0));
+            selectedRigidbody.transform.Rotate(new Vector3(rotVel,0, 0) * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.F) && selectedRigidbody)
@@ -79,10 +80,15 @@ public class ObjectPickup : MonoBehaviour
         if (selectedRigidbody)
         {
             if (Input.GetMouseButton(3))
-                selectionDistance -= 10f * Time.deltaTime;
+            {
+                selectionDistance -= 5.5f * Time.deltaTime;
+                if(selectionDistance < 1)
+                    selectionDistance = 1;
+            }
+                
 
             if (Input.GetMouseButton(4))
-                selectionDistance += 10f * Time.deltaTime;
+                selectionDistance += 5.5f * Time.deltaTime;
 
             Vector3 mousePositionOffset = targetCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, selectionDistance)) - originalScreenTargetPosition;
 
