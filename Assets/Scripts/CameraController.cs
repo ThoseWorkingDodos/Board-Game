@@ -48,7 +48,8 @@ public class CameraController : MonoBehaviour
         {
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
-            playerCam.transform.eulerAngles += new Vector3(-mouseY * camSens, 0, 0);
+            playerCam.transform.eulerAngles += new Vector3(-mouseY * camSens, mouseX * camSens, 0);
+            
         }
 
     }
