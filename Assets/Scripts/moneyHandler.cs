@@ -12,12 +12,6 @@ public class moneyHandler : MonoBehaviour
         StartAmounts();
     }
 
-    
-    void Update()
-    {
-        
-    }
-
     void StartAmounts()
     {
         Vector3 position = transform.position;
