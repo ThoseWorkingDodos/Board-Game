@@ -46,13 +46,18 @@ public class ObjectPickup : MonoBehaviour
             selectedRigidbody.transform.Rotate(new Vector3(0,rotVel,0) * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.X) && selectedRigidbody)
+        if (Input.GetKey(KeyCode.Alpha2) && selectedRigidbody)
         {
             selectedRigidbody.transform.position = new Vector3 (0,8.02f,0);
             selectedRigidbody.velocity = Vector3.zero;
             selectedRigidbody = null;
         }
 
+        if (Input.GetKey(KeyCode.X) && selectedRigidbody)
+        {
+            selectedRigidbody.transform.rotation = Quaternion.identity;
+        }
+  
         if (Input.GetKey(KeyCode.Q) && selectedRigidbody)
         {
             selectedRigidbody.transform.Rotate(new Vector3(0, -rotVel, 0) * Time.deltaTime);
