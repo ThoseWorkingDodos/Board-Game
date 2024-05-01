@@ -5931,7 +5931,7 @@ MonoBehaviour:
   cardPrefab: {fileID: 3899636164077327137, guid: 47cc334ec046b30469ae9dff1b888a1b, type: 3}
   chanceSpawn: {fileID: 1998230519}
   chanceCards:
-  - {fileID: 3899636164077327137, guid: 47cc334ec046b30469ae9dff1b888a1b, type: 3}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
