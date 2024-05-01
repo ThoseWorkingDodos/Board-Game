@@ -24,6 +24,8 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             playerCamTransform.transform.position = initPos;
