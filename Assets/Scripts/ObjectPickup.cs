@@ -116,7 +116,7 @@ public class ObjectPickup : MonoBehaviour
             if (selectedRigidbody.gameObject.name == "Dice" && Input.GetKey(KeyCode.R))
             {
                 Debug.Log("Yes");
-                selectedRigidbody.angularVelocity += new Vector3(1,1,1)*5000*Time.deltaTime;
+                selectedRigidbody.AddTorque(new Vector3(Random.Range(1,500), Random.Range(1, 500), Random.Range(1, 500)));
             }
         }
     }
