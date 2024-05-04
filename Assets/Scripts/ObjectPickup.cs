@@ -65,12 +65,22 @@ public class ObjectPickup : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(-rotVel, 0, 0) *Time.deltaTime);
+            if (selectedRigidbody.gameObject.layer == 7)
+            {
+                selectedRigidbody.transform.Rotate(new Vector3(0, 0, -rotVel) * Time.deltaTime);
+            }
+            else
+                selectedRigidbody.transform.Rotate(new Vector3(-rotVel, 0, 0) *Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.C) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(rotVel,0, 0) * Time.deltaTime);
+            if (selectedRigidbody.gameObject.layer == 7)
+            {
+                selectedRigidbody.transform.Rotate(new Vector3(0, 0, rotVel) * Time.deltaTime);
+            }
+            else
+                selectedRigidbody.transform.Rotate(new Vector3(rotVel, 0, 0) * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.F) && selectedRigidbody)
@@ -106,7 +116,7 @@ public class ObjectPickup : MonoBehaviour
             if (selectedRigidbody.gameObject.name == "Dice" && Input.GetKey(KeyCode.R))
             {
                 Debug.Log("Yes");
-                selectedRigidbody.angularVelocity += new Vector3(1,1,1)*5000*Time.deltaTime;
+                selectedRigidbody.AddTorque(new Vector3(Random.Range(1,500), Random.Range(1, 500), Random.Range(1, 500)));
             }
         }
     }
