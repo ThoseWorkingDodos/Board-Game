@@ -237,7 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29316156}
   - component: {fileID: 29316157}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CommunityCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2566,7 +2566,7 @@ MonoBehaviour:
   rayDist: 0
   layer:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
 --- !u!4 &1028136060 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2950366585456631658, guid: 1f83c551bfa310e409438f3b56630fa2, type: 3}
@@ -3706,7 +3706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998230519}
   - component: {fileID: 1998230520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ChanceCards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
