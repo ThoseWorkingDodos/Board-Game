@@ -814,7 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1260455075087810981}
   m_Layer: 0
-  m_Name: Chance_Community
+  m_Name: Chance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,7 +830,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.195, y: 8.02, z: -2.201}
-  m_LocalScale: {x: 0.9123619, y: 0.9123619, z: 0.9123619}
+  m_LocalScale: {x: 0.7, y: 0.9, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1545144592129007731}
