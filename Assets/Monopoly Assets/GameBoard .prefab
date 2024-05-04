@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1058205746017726911}
   - component: {fileID: 8397425023005120858}
   - component: {fileID: 7666487987715971753}
+  - component: {fileID: 6376039420730934122}
   m_Layer: 0
   m_Name: 'GameBoard '
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: faff07db2c0baeb4d8e2149f45318c4d, type: 2}
+  - {fileID: 2100000, guid: ab595d7c75964df40bf5fc55d417bcf8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10, y: 0.02912426, z: 10}
   m_Center: {x: 0, y: -0.007382393, z: 0}
+--- !u!114 &6376039420730934122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308873561980641008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b2fdb266aa7c8469eb229ecdbca987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: 8af4ebc34da7ef945b49a23c45a17ec4, type: 3}
