@@ -65,12 +65,22 @@ public class ObjectPickup : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(-rotVel, 0, 0) *Time.deltaTime);
+            if (selectedRigidbody.gameObject.layer == 7)
+            {
+                selectedRigidbody.transform.Rotate(new Vector3(0, 0, -rotVel) * Time.deltaTime);
+            }
+            else
+                selectedRigidbody.transform.Rotate(new Vector3(-rotVel, 0, 0) *Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.C) && selectedRigidbody)
         {
-            selectedRigidbody.transform.Rotate(new Vector3(rotVel,0, 0) * Time.deltaTime);
+            if (selectedRigidbody.gameObject.layer == 7)
+            {
+                selectedRigidbody.transform.Rotate(new Vector3(0, 0, rotVel) * Time.deltaTime);
+            }
+            else
+                selectedRigidbody.transform.Rotate(new Vector3(rotVel, 0, 0) * Time.deltaTime);
         }
 
         if (Input.GetKeyDown(KeyCode.F) && selectedRigidbody)

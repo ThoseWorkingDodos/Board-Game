@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2423806246611654732}
   - component: {fileID: 1642142716152501436}
   - component: {fileID: 2632866624123991140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343698824380007344}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.10960605, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 1742385024512275211}
   - component: {fileID: 2910581822989903473}
   - component: {fileID: 6704443004813801885}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333650459046518891}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.7672392, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 7695002551278933179}
   - component: {fileID: 5485770436233554726}
   - component: {fileID: 4998291939099515933}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904080030335070755}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.8768453, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 2940754004097571695}
   - component: {fileID: 4221172408931816159}
   - component: {fileID: 7449233020745997427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2570755339853798047}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.0960563, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 1665529885759597506}
   - component: {fileID: 1175482892584369443}
   - component: {fileID: 6017637695018529253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2747347532985271574}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.9864503, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 5738597523656957236}
   - component: {fileID: 727239102599772173}
   - component: {fileID: 1060813966120364421}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3025287895535051978}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 7347407220075358776}
   - component: {fileID: 2548607304830579995}
   - component: {fileID: 3481517602299906289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4551579953464380835}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.5344784, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -998,7 +998,7 @@ GameObject:
   - component: {fileID: 5721387242770417492}
   - component: {fileID: 8347247803304785295}
   - component: {fileID: 397152416193674235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1013,7 +1013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4773171493695899323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.5480282, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1132,7 +1132,7 @@ GameObject:
   - component: {fileID: 5559011156270725505}
   - component: {fileID: 2051082434419028337}
   - component: {fileID: 7572794891866067369}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216748636931141612}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.6440845, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1266,7 +1266,7 @@ GameObject:
   - component: {fileID: 721008664786398780}
   - component: {fileID: 7453549911583889985}
   - component: {fileID: 2264692476641463570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1281,7 +1281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5372680667573928793}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.3288171, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1400,7 +1400,7 @@ GameObject:
   - component: {fileID: 2503421427874397163}
   - component: {fileID: 7202786871124670983}
   - component: {fileID: 3920090483074839030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5410993686341925132}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.2056624, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 2733929077549426782}
   - component: {fileID: 5858660688647675425}
   - component: {fileID: 9128500388095348976}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6078234968224076581}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.4384221, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 1376558609999420238}
   - component: {fileID: 2703283151458583257}
   - component: {fileID: 8588727888551868768}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6295869250264008441}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.21921106, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 8089759654895614499}
   - component: {fileID: 5827329358704491651}
   - component: {fileID: 4323306313496163431}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1817,7 +1817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6468383381555421947}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.3152674, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 6094273684192319646}
   - component: {fileID: 1618984336014422758}
   - component: {fileID: 3382043617981818346}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7582773425228708777}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 1.4248735, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0
@@ -2070,7 +2070,7 @@ GameObject:
   - component: {fileID: 3644336787788767961}
   - component: {fileID: 7560620924940513606}
   - component: {fileID: 4169000959568671827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Chance_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +2085,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8843469251796164220}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.002192215, y: 0.6576342, z: -0.083300255}
   m_LocalScale: {x: 0.95875, y: 0.2, z: 0.95875}
   m_ConstrainProportionsScale: 0

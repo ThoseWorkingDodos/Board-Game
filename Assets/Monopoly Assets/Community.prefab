@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4124551638646461181}
   - component: {fileID: 2617993280194847245}
   - component: {fileID: 6060139469742770133}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 2884710803541976331}
   - component: {fileID: 386177743487614168}
   - component: {fileID: 8015535821739273497}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 3080065286039769335}
   - component: {fileID: 5407496446478369128}
   - component: {fileID: 5525164738041695729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 1801370474659860081}
   - component: {fileID: 4113826981689210467}
   - component: {fileID: 3185696838808799791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 2686662013738783}
   - component: {fileID: 1845098628664259821}
   - component: {fileID: 4901390847643908030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 8580311110028396886}
   - component: {fileID: 4426052246270291178}
   - component: {fileID: 3797184594926957842}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 8474457559321360226}
   - component: {fileID: 6883129916279282290}
   - component: {fileID: 5950807865425863033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 1424279754052434886}
   - component: {fileID: 1671672812470955697}
   - component: {fileID: 51715367868689462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,7 +1085,7 @@ GameObject:
   - component: {fileID: 7781601860100347081}
   - component: {fileID: 3588621108236679395}
   - component: {fileID: 6839584711535734851}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ GameObject:
   - component: {fileID: 1029172603812712913}
   - component: {fileID: 4817114386880053653}
   - component: {fileID: 1372194648057047679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1353,7 @@ GameObject:
   - component: {fileID: 4264226937020754305}
   - component: {fileID: 6594045317582114913}
   - component: {fileID: 768261684040329734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1487,7 +1487,7 @@ GameObject:
   - component: {fileID: 5668730390665602826}
   - component: {fileID: 3663649949208664009}
   - component: {fileID: 7760794020014539136}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1621,7 @@ GameObject:
   - component: {fileID: 8045673891262485491}
   - component: {fileID: 8727909634691420494}
   - component: {fileID: 9014421207122237341}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1755,7 +1755,7 @@ GameObject:
   - component: {fileID: 2254344268585968450}
   - component: {fileID: 5301404189787704286}
   - component: {fileID: 7611037045865521113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1936,7 +1936,7 @@ GameObject:
   - component: {fileID: 4051082974975202470}
   - component: {fileID: 8166487453095475969}
   - component: {fileID: 5151063022498252340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2070,7 +2070,7 @@ GameObject:
   - component: {fileID: 585703596077280194}
   - component: {fileID: 5966830898779281214}
   - component: {fileID: 1028155842238328763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Community_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
