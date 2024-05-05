@@ -9,25 +9,21 @@ public class CardManager : MonoBehaviour
 {
     public GameObject cardprefab;
 
-    [SerializeField] private GameObject[] cardObjects;
+    public GameObject[] cardObjects;
     [SerializeField] private int cardNo;
     void Start()
     {
         cardNo = cardprefab.transform.childCount;
         cardObjects = new GameObject[cardNo];
-        Debug.Log(cardNo);
-        ShuffleCards();
     }
-
-
-    private void ShuffleCards()
+    public void ShuffleCards()
     {
         int Rand;
-        int[] temp = new int[cardNo];
+        int[] shuffledIndex = new int[cardNo];
 
         for (int i = 0; i < cardNo; i++)
         {
-            temp[i] = 999;
+            shuffledIndex[i] = 999;
         }
 
         /* Generate Random Value*/
@@ -36,29 +32,28 @@ public class CardManager : MonoBehaviour
             Rand = Random.Range(0, cardNo);               
             for (int j = 0; j < cardNo; j++)
             {
-                if (Rand == temp[j])
+                if (Rand == shuffledIndex[j])
                 {
                     do
                     {
                         Rand = Random.Range(0, cardNo);
-                    } while (Rand == temp[j]);
+                    } while (Rand == shuffledIndex[j]);
                     j = 0;
                 }
             }
-            temp[i] = Rand; 
+            shuffledIndex[i] = Rand; 
         }
 
         /* Assign indices to the Card Object*/
         Transform[] cards = cardprefab.GetComponentsInChildren<Transform>(true);
         int cardIndex = 0;
-        Debug.Log(cards.Length);
+
         for (int i=0; i < cards.Length; i++)
         {
             if (i >= 1)
             {
-                cardObjects[cardIndex] = cards[i].gameObject;
+                cardObjects[shuffledIndex[cardIndex]] = cards[i].gameObject;
                 cardIndex++;
-                Debug.Log($"Card Name: {cards[i].gameObject.name}");
             }
         }
             

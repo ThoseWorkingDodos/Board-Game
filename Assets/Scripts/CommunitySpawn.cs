@@ -5,25 +5,20 @@ using UnityEngine;
 public class CommunitySpawn : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject cardPrefab;
-    [SerializeField] private Transform communitySpawn;
-    [SerializeField] private GameObject[] communityCards;
+    [SerializeField] private Transform      communitySpawn;
+    [SerializeField] private CardManager    cardManager;
 
     void Start()
     {
+        cardManager = GetComponent<CardManager>();
         SpawnCards();
     }
     private void SpawnCards()
     {
-        for (int i = 0; i < communityCards.Length; i++)
+        cardManager.ShuffleCards();
+        for (int i = 0; i < cardManager.cardObjects.Length; i++)
         {
-            Transform chance_transform = cardPrefab.transform.Find(string.Concat("Community_", i + 1));
-            communityCards[i] = chance_transform.gameObject;
-        }
-
-        for (int i = 0; i < communityCards.Length; i++)
-        {
-            GameObject card = Instantiate(communityCards[i], communitySpawn);
+            GameObject card = Instantiate(cardManager.cardObjects[i], communitySpawn);
             card.transform.parent = transform;
             card.transform.position = communitySpawn.transform.position + new Vector3(0, 0.1f * i, 0);
         }
