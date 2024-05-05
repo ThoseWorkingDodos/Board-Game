@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cardHolder : MonoBehaviour
+public class CardHolder : MonoBehaviour
 {
     public Transform [] cardSpots;
     private GameObject[] cardMesh;
