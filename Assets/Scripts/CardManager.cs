@@ -8,17 +8,14 @@ using UnityEngine.UIElements;
 public class CardManager : MonoBehaviour
 {
     public GameObject cardprefab;
-
     public GameObject[] cardObjects;
+
     [SerializeField] private int cardNo;
-    void Start()
+
+    public void ShuffleCards()
     {
         cardNo = cardprefab.transform.childCount;
         cardObjects = new GameObject[cardNo];
-        ShuffleCards();
-    }
-    public void ShuffleCards()
-    {
         int Rand;
         int[] shuffledIndex = new int[cardNo];
 

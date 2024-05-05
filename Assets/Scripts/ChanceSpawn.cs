@@ -15,6 +15,7 @@ public class ChanceSpawn : MonoBehaviour
     }
     private void SpawnCards()
     {
+        cardManager.ShuffleCards();
         for (int i = 0; i < cardManager.cardObjects.Length; i++)
         {
             GameObject card = Instantiate(cardManager.cardObjects[i], chanceSpawn);
