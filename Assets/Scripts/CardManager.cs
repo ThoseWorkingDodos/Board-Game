@@ -15,6 +15,7 @@ public class CardManager : MonoBehaviour
     {
         cardNo = cardprefab.transform.childCount;
         cardObjects = new GameObject[cardNo];
+        ShuffleCards();
     }
     public void ShuffleCards()
     {
@@ -38,7 +39,7 @@ public class CardManager : MonoBehaviour
                     {
                         Rand = Random.Range(0, cardNo);
                     } while (Rand == shuffledIndex[j]);
-                    j = 0;
+                    j = -1;
                 }
             }
             shuffledIndex[i] = Rand; 
