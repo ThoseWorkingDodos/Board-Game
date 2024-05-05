@@ -16,14 +16,6 @@ public class ChanceSpawn : MonoBehaviour
 
     // Update is called once per frame
 
-    private void randomize()
-    {
-        for (int i = 0; i < chanceCards.Length - 1; i++)
-        {
-            int rnd = Random.Range(i, chanceCards.Length);
-            Debug.Log(rnd);
-        }
-    }
     private void SpawnCards()
     {
         for (int i = 0; i < chanceCards.Length; i++)

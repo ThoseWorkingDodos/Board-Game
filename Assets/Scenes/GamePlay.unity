@@ -237,6 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29316156}
   - component: {fileID: 29316157}
+  - component: {fileID: 29316158}
   m_Layer: 7
   m_Name: CommunityCards
   m_TagString: Untagged
@@ -290,6 +291,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &29316158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29316155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75a341e2bc662e47b190073470c7776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardprefab: {fileID: 0}
+  cardObjects: []
+  cardNo: 0
 --- !u!1 &73053670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,6 +3951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1998230519}
+  - component: {fileID: 1998230521}
   - component: {fileID: 1998230520}
   m_Layer: 7
   m_Name: ChanceCards
@@ -3989,6 +4006,21 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &1998230521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998230517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75a341e2bc662e47b190073470c7776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardprefab: {fileID: 0}
+  cardObjects: []
+  cardNo: 0
 --- !u!1001 &2000606833
 PrefabInstance:
   m_ObjectHideFlags: 0

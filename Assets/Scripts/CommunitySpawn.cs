@@ -13,15 +13,6 @@ public class CommunitySpawn : MonoBehaviour
     {
         SpawnCards();
     }
-
-    private void randomize()
-    {
-        for (int i = 0; i < communityCards.Length - 1; i++)
-        {
-            int rnd = Random.Range(i, communityCards.Length);
-            Debug.Log(rnd);
-        }
-    }
     private void SpawnCards()
     {
         for (int i = 0; i < communityCards.Length; i++)
