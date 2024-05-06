@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class moneyHandler : MonoBehaviour
+public class MoneyHandler : MonoBehaviour
 {
     public GameObject[] moneyTypes;
     void Start()

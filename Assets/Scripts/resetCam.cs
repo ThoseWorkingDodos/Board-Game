@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class resetCam : MonoBehaviour
+public class ResetCam : MonoBehaviour
 {
     private Camera playerCam;
     private Quaternion initRot;

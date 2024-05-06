@@ -4,37 +4,34 @@ using UnityEngine;
 
 public class CommunitySpawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField] private GameObject cardPrefab;
     [SerializeField] private Transform communitySpawn;
     [SerializeField] private GameObject[] communityCards;
 
+    private bool isSpawned;
+    private CardManager cardManager;
+
     void Start()
     {
+        cardManager = GetComponent<CardManager>();
+        isSpawned = false;
         SpawnCards();
-    }
-
-    private void randomize()
-    {
-        for (int i = 0; i < communityCards.Length - 1; i++)
-        {
-            int rnd = Random.Range(i, communityCards.Length);
-            Debug.Log(rnd);
-        }
     }
     private void SpawnCards()
     {
-        for (int i = 0; i < communityCards.Length; i++)
+        cardManager.ShuffleCards();
+        communityCards = new GameObject[cardManager.cardObjects.Length];
+        for (int i = 0; i < cardManager.cardObjects.Length; i++)
         {
-            Transform chance_transform = cardPrefab.transform.Find(string.Concat("Community_", i + 1));
-            communityCards[i] = chance_transform.gameObject;
-        }
-
-        for (int i = 0; i < communityCards.Length; i++)
-        {
-            GameObject card = Instantiate(communityCards[i], communitySpawn);
+            GameObject card = Instantiate(cardManager.cardObjects[i], communitySpawn);
             card.transform.parent = transform;
             card.transform.position = communitySpawn.transform.position + new Vector3(0, 0.1f * i, 0);
+            communityCards[i] = card;
         }
+        isSpawned = true;
+    }
+    private void FixedUpdate()
+    {
+        if (isSpawned)
+            cardManager.CardToBottom(communityCards, communitySpawn);
     }
 }
