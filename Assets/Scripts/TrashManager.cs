@@ -7,6 +7,7 @@ public class TrashManager : MonoBehaviour
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
+        if(collision.gameObject.layer == 8)
+            Destroy(collision.gameObject);
     }
 }

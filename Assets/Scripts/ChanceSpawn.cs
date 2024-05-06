@@ -4,39 +4,36 @@ using UnityEngine;
 
 public class ChanceSpawn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField] private GameObject     cardPrefab;
-    [SerializeField] private Transform      chanceSpawn;
+    
+    [SerializeField] private Transform chanceSpawn;
     [SerializeField] private GameObject[]   chanceCards;
+
+    private bool isSpawned;
+    private CardManager cardManager;
 
     void Start()
     {
+        cardManager = GetComponent<CardManager>();
+        isSpawned = false;
         SpawnCards();
-    }
-
-    // Update is called once per frame
-
-    private void randomize()
-    {
-        for (int i = 0; i < chanceCards.Length - 1; i++)
-        {
-            int rnd = Random.Range(i, chanceCards.Length);
-            Debug.Log(rnd);
-        }
     }
     private void SpawnCards()
     {
-        for (int i = 0; i < chanceCards.Length; i++)
+        cardManager.ShuffleCards();
+        chanceCards = new GameObject[cardManager.cardObjects.Length];
+        for (int i = 0; i < cardManager.cardObjects.Length; i++)
         {
-            Transform chance_transform = cardPrefab.transform.Find(string.Concat("Chance_",i+1));
-            chanceCards[i] = chance_transform.gameObject;
-        }
-
-        for (int i = 0; i < chanceCards.Length; i++)
-        {
-            GameObject card = Instantiate(chanceCards[i],chanceSpawn);
+            GameObject card = Instantiate(cardManager.cardObjects[i], chanceSpawn);
             card.transform.parent = transform;
             card.transform.position = chanceSpawn.transform.position + new Vector3(0,0.1f*i,0);
+            chanceCards[i] = card;
         }
+        isSpawned = true;
+    }
+
+    private void FixedUpdate()
+    {
+        if(isSpawned)
+            cardManager.CardToBottom(chanceCards,chanceSpawn);
     }
 }

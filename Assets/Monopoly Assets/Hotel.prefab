@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4380380241436391631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: topPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3404573545540310723}
   - component: {fileID: 6366044881448981875}
   - component: {fileID: 4600133148982739435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 1029071469990624313}
   - component: {fileID: 2063779505726213800}
   - component: {fileID: 3530981221117153790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 7276199396968150270}
   - component: {fileID: 3129105871970604284}
   - component: {fileID: 1107995873770502181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hotel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 8731796586901277735}
   - component: {fileID: 3380077297930584019}
   - component: {fileID: 6388982854420224301}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
