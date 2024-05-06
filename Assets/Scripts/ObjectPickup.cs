@@ -4,14 +4,13 @@ public class ObjectPickup : MonoBehaviour
 {
     public float forceAmount = 10f;
 
-    [SerializeField]Rigidbody   selectedRigidbody;
+    public Rigidbody   selectedRigidbody;
     Camera          targetCamera;
     Vector3         originalScreenTargetPosition;
     Vector3         originalRigidbodyPos;
     private float   rotVel;
     float           selectionDistance;
     public float    rayDist;
-
     [SerializeField] private LayerMask layer;
 
 
