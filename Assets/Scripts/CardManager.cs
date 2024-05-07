@@ -6,6 +6,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/* 
+     Script designed to manage decks of card.
+
+     Available functions: 
+         1) CardToBottom()  : Moves current card to the bottom of the deck.
+         2) ShuffleCards()  : Shuffles spawn order of the cards in a deck.
+         3) SpawnCards()    : Spawns the deck of cards based on a prefab.  
+*/
+
 public class CardManager : MonoBehaviour
 {
     public GameObject cardprefab;

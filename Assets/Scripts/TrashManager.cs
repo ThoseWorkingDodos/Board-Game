@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-/* Designed to delete trashable items on contact. */
+/* Designed to delete trashable items on contact with trash circle. */
 public class TrashManager : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)

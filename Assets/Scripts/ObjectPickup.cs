@@ -1,5 +1,6 @@
 using UnityEngine;
 
+/* Allows using the mousue to pick up any object with a rigidbody component. */
 public class ObjectPickup : MonoBehaviour
 {
     public float        forceAmount = 10f;
