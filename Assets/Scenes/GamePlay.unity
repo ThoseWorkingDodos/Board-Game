@@ -237,7 +237,6 @@ GameObject:
   m_Component:
   - component: {fileID: 29316156}
   - component: {fileID: 29316158}
-  - component: {fileID: 29316157}
   m_Layer: 7
   m_Name: CommunityCards
   m_TagString: Untagged
@@ -261,20 +260,6 @@ Transform:
   - {fileID: 681749937}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -135, z: 180}
---- !u!114 &29316157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29316155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a1e122f1b3f5564eaf4c4c1eee315cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  communitySpawn: {fileID: 29316156}
-  communityCards: []
 --- !u!114 &29316158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +277,8 @@ MonoBehaviour:
   player: {fileID: 963194227}
   bottomButton: {fileID: 681749936}
   currentCard: {fileID: 0}
+  cardSpawn: {fileID: 29316156}
+  cardList: []
 --- !u!1 &73053670
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,7 +3617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1998230519}
   - component: {fileID: 1998230521}
-  - component: {fileID: 1998230520}
   m_Layer: 7
   m_Name: ChanceCards
   m_TagString: Untagged
@@ -3654,20 +3640,6 @@ Transform:
   - {fileID: 97790195}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 180}
---- !u!114 &1998230520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998230517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d567f247fe77bd49b35348127c4a229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chanceSpawn: {fileID: 1998230519}
-  chanceCards: []
 --- !u!114 &1998230521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,6 +3657,8 @@ MonoBehaviour:
   player: {fileID: 963194227}
   bottomButton: {fileID: 97790194}
   currentCard: {fileID: 0}
+  cardSpawn: {fileID: 1998230519}
+  cardList: []
 --- !u!1001 &2000606833
 PrefabInstance:
   m_ObjectHideFlags: 0

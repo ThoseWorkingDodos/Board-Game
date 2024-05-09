@@ -10,9 +10,9 @@ using UnityEngine.UIElements;
      Script designed to manage decks of card.
 
      Available functions: 
-         1) CardToBottom()  : Moves current card to the bottom of the deck.
-         2) ShuffleCards()  : Shuffles spawn order of the cards in a deck.
-         3) SpawnCards()    : Spawns the deck of cards based on a prefab.  
+         1) SpawnCards()    : Spawns the deck of cards based on a prefab. 
+         2) CardToBottom()  : Moves current card to the bottom of the deck.
+         3) ShuffleCards()  : Shuffles spawn order of the cards in a deck.
 */
 
 public class CardManager : MonoBehaviour
@@ -21,14 +21,35 @@ public class CardManager : MonoBehaviour
     public GameObject[] cardObjects;
     public Camera player;
     public GameObject bottomButton;
+
     private int cardNo;
     private ObjectPickup objectPicked;
     private HitBottom hitBottom;
+    private bool isSpawned;
 
     [SerializeField] private GameObject     currentCard;
+    [SerializeField] private Transform      cardSpawn;
+    [SerializeField] private GameObject[]   cardList;
+
+    
     private void Start()
     {
         hitBottom = bottomButton.GetComponent<HitBottom>();
+        CardSpawn();
+    }
+
+    public void CardSpawn()
+    {
+        ShuffleCards();
+        cardList = new GameObject[cardObjects.Length];
+        for (int i = 0; i < cardObjects.Length; i++)
+        {
+            GameObject card = Instantiate(cardObjects[i], cardSpawn);
+            card.transform.parent = transform;
+            card.transform.position = cardSpawn.transform.position + new Vector3(0, 0.1f * i, 0);
+            cardList[i] = card;
+        }
+        isSpawned = true;
     }
 
     public void CardToBottom(GameObject[] cards,Transform bottomPos)
@@ -108,5 +129,11 @@ public class CardManager : MonoBehaviour
         }
             
 
+    }
+
+    private void FixedUpdate()
+    {
+        if (isSpawned)
+            CardToBottom(cardList, cardSpawn);
     }
 }
