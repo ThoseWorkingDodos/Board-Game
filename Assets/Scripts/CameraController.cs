@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+/* Controls Camera movement using Mouse and Keyboard */
 public class CameraController : MonoBehaviour
 {
     public float camSens = 5.0f;

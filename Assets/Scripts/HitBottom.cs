@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Sets boolean to true when a card contacts the send to bottom button. */
 public class HitBottom : MonoBehaviour
 {
     public bool cardHitBottom;

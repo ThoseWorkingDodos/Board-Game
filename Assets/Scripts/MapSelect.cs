@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;  
 
+/* Sets Monopoly Board Texture. */
 public class MapSelect : MonoBehaviour
 {
     public Texture albedo;
