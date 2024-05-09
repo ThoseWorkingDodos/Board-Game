@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Spawns Deed cards inside the card holder. */
 public class CardHolder : MonoBehaviour
 {
     public Transform [] cardSpots;

@@ -1,19 +1,21 @@
 using UnityEngine;
 
+/* Allows using the mousue to pick up any object with a rigidbody component. */
 public class ObjectPickup : MonoBehaviour
 {
-    public float forceAmount = 10f;
+    public float        forceAmount = 10f;
+    public Rigidbody    selectedRigidbody;
+    public float        rayDist;
 
-    public Rigidbody   selectedRigidbody;
-    Camera          targetCamera;
-    Vector3         originalScreenTargetPosition;
-    Vector3         originalRigidbodyPos;
-    private float   rotVel;
-    float           selectionDistance;
-    public float    rayDist;
+    private float       rotVel;
+
+
+    Camera              targetCamera;
+    Vector3             originalScreenTargetPosition;
+    Vector3             originalRigidbodyPos;
+    float               selectionDistance;
+
     [SerializeField] private LayerMask layer;
-
-
     void Start()
     {
         targetCamera = GetComponent<Camera>();
@@ -88,7 +90,6 @@ public class ObjectPickup : MonoBehaviour
         }
 
     }
-
 
     void FixedUpdate()
     {
